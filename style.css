@@ -5,6 +5,7 @@
 body {
     height: 100vh;
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 10%, 80%, 10%;
 }
@@ -12,17 +13,22 @@ body {
 .container {
     display: flex;
     gap: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: teal;
-
-    grid-area: 1 / 2 / 2 / 3
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: red;
+    margin: 20px;
 }
 
 .main-container {
+    margin-top: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-
-    grid-area: 2 / 2 / 3 / 3
+    align-items: center;
+    background-color: lightblue;
+    height: 75vh;
+    grid-area: 1 / 2 / 2 / 3;
+    box-shadow: 5px 5px 5px grey;
 }
 
 .grid {
@@ -31,6 +37,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 0;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .square {
@@ -38,9 +45,44 @@ body {
     width: 100px;
     border: 2px solid black;
     border-radius: 2px;
+    background-color: bisque;
+    cursor: url(hammer.png) 5 5, pointer;
+}
+
+#start-game img {
+    height: 40px;
+    width: auto;
+}
+
+#start-game {
+    border-radius : 50%;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+#start-game:hover {
+    background-color: pink;
+    border-color: blue;
 }
 
 .mole {
     background-image: url(mole.gif);
     background-size: cover;
+    
+}
+
+.win {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    position: fixed;
+    margin: 100px;
+    color: lightpink;
+    background-color: grey;
+    opacity: .7;
+    scale: 0;
+}
+
+.win.active  {
+    scale: 1;
 }
