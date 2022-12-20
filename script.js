@@ -10,7 +10,7 @@ let hitPosition
 let currentTime
 let timerId = null
 let countDownTimer
-let timer = 600
+let timer = 800
 
 startGame()
 
