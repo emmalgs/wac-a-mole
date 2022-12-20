@@ -49,6 +49,11 @@ body {
     cursor: url(hammer.png) 5 5, pointer;
 }
 
+.square:hover {
+    background-color: aquamarine;
+    transition: all 0.15s;
+}
+
 #start-game img {
     height: 40px;
     width: auto;
