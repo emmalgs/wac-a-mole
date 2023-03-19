@@ -11,7 +11,7 @@
 * JavaScript
 
 ## Description
-A dancing mole entices you to smack him in the head with your mouse pointer! Click the wacking hammer to restart the game.
+A dancing mole entices you to smack him in the head with your mouse pointer! Click the wacking hammer to restart the game. This code was based off of a [Free Code Camp] (https://www.freecodecamp.org/) tutorial.
 
 ## Setup/Installation Requirements
 
